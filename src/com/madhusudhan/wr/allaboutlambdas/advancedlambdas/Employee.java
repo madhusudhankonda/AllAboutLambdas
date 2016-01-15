@@ -8,10 +8,19 @@ package com.madhusudhan.wr.allaboutlambdas.advancedlambdas;
  */
 public class Employee {
 
+	/**
+	 * An Employee created using an id
+	 * @param id
+	 */
 	public Employee(int id) {
 		// Logic for creating an employee with an id
 	}
 
+	/**
+	 * An Employee created using an id and a name
+	 * @param id
+	 * @param name
+	 */
 	public Employee(int id, String name) {
 		// Logic for creating an employee with an id and name.
 	}
