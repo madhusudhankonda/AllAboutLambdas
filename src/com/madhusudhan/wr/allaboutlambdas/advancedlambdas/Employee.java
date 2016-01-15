@@ -25,16 +25,27 @@ public class Employee {
 		// Logic for creating an employee with an id and name.
 	}
 
-	// Interface representing the first constructor
+	/**
+	 *  Interface representing the first constructor
+	 * @author mkonda
+	 *
+	 */
 	interface EmployeeById {
 		public Employee create(int id);
 	}
 
-	// Interface representing the second constructor
+	/**
+	 *  Interface representing the second constructor
+	 * @author mkonda
+	 *
+	 */
 	interface EmployeeByName {
 		public Employee create(int id, String employee);
 	}
 	
+	/**
+	 * Lambdas without using constructor references
+	 */
 	public void normalLambdaExpressions(){
 		// Lambda invoking the first constructor - no const refs
 		EmployeeById empLambda = id -> new Employee(id);
@@ -44,6 +55,9 @@ public class Employee {
 		  (id, name) -> new Employee(id, name);
 	}
 	
+	/**
+	 * Lambdas with constructor references
+	 */
 	public void constructorReferencedLambdas(){
 		// Both have the same constructor reference
 
